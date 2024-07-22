@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background: linear-gradient(to right, #83a4d4, #b6fbff); */
+    background-image: url('/image/8YDk.gif');
+    background-size: cover; /* Adjusts the size of the background image */
+    background-repeat: no-repeat; /* Ensures the background image doesn't repeat */
+    background-position: center; /* Centers the background image */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional: add background to make the text more readable */
+    padding: 10px 0;
+    z-index: 1000; /* Ensure the header is on top of other elements */
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.4em;
+    margin-bottom: 12px;
+    color: #444;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.weather-info {
+    text-align: center;
+}
+
+.weather-info h1 {
+    color: #ff5733;
+}
+
+.weather-info p {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.weather-info img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+
+    input[type="text"], button {
+        width: 100%;
+    }
+}
